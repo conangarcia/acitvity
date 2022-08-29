@@ -49,6 +49,12 @@ class _SocialPageState extends State<SocialPage> {
                                 id: snapshot.data!.docs[index].id,
                                 title: data['title'],
                                 description: data['description'],
+                                onItemDeleted: () async {
+                                  // Delete
+                                  await postsCollection
+                                      .doc(snapshot.data!.docs[index].id)
+                                      .delete();
+                                },
                               );
                             }),
                           );

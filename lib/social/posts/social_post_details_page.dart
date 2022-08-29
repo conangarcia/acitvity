@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-import 'package:todo_app/models/item_model.dart';
-import 'package:todo_app/social/posts/social_post_page.dart';
 import 'package:todo_app/widgets/item_button.dart';
 
 /// This is the details page for the social posts.

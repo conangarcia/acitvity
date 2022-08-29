@@ -114,6 +114,7 @@ class _SocialPostPageState extends State<SocialPostPage> {
                     if (_title.text.isNotEmpty &&
                         _description.text.isNotEmpty &&
                         _date.text.isNotEmpty) {
+                      // Add
                       await postsCollection.add({
                         "title": _title.text,
                         "description": _description.text,
